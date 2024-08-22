@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "AAWO_lib")(type "KiCad")(uri "${KIPRJMOD}/AAWO-KiCad-library/AAWO_lib.kicad_sym")(options "")(descr ""))
+)

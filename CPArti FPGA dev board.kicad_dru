@@ -1,0 +1,31 @@
+(version 1)
+
+(rule SRAM_skew
+	(condition "A.NetName == '*SRAM*'")
+	(constraint skew (max 0.3mm))
+)
+
+(rule FPGA_CFG_slash_skew
+	(condition "A.NetName == '*FPGA_CFG*'")
+	(constraint skew (max 2.5mm))
+)
+
+(rule 7seg_3.3V_skew
+	(condition "A.NetName == '*7SEG_{*}'")
+	(constraint skew (max 5mm))
+)
+
+(rule 7seg_5V_skew
+	(condition "A.NetName == '*7SEG_{*}_5V'")
+	(constraint skew (max 1.5mm))
+)
+
+(rule DAC_R_skew
+	(condition "A.NetName == '*R_DAC_D*' || A.NetName == '*R_DAC_CLK'")
+	(constraint skew (max 1mm))
+)
+
+(rule DAC_skew
+	(condition "A.NetName == 'DAC_D*' || A.NetName == 'DAC_CLK'")
+	(constraint skew (max 1mm))
+)

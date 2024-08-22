@@ -1,0 +1,3 @@
+[submodule "AAWO-KiCad-library"]
+	path = AAWO-KiCad-library
+	url = https://github.com/AAWO/AAWO-KiCad-library.git
