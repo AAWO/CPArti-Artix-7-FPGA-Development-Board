@@ -2,9 +2,11 @@
 
 A fairly low-cost 4-layer AMD/Xilinx Artix-7 FPGA development board with bidirectional and unidirectional high-speed signals, SRAM, DAC and USB-C connection with built-in JTAG programmer. Designed for JLC04161H-7628 layer stackup in KiCad. All available components include JLCPCB parts numbers for assembly. The project includes [KiBot](https://github.com/INTI-CMNB/KiBot) configuration for documentation and production files generation automation.
 
+![3D view of the CPArti PCB](doc/3D_view.png)
+
 The development board includes:
 - Artix-7 FPGA
-- USB-C connection to the FPGA via FTDI USB to JTAG (no need for additional programmer) + optional JTAG for a programmer (in case of USB connection failure)
+- USB-C connection to the FPGA via FTDI USB to JTAG (no need for additional external programmer) + optional JTAG for a programmer (in case of USB connection failure)
 - 2 unidirectional input and 3 unidirectional output SMA connections to FPGA
 - 1 direct bidirectional SMA connections to FPGA
 - 2 switched bidirectional SMA connections to a single FPGA pin (controlled from FPGA)
